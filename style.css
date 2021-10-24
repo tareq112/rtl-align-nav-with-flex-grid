@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*---flex container----*/
+.container{
+    height: 100vh;
+    background: linear-gradient(0, 0, 0, .3);
+    border: 1px solid black;
+}
+.navbar{
+    display: flex;
+    flex:1 ;
+   
+}
+/*---flex item---*/
+.left{
+    border: 1px solid red;
+}
+.right{
+    display: flex;
+      border: 1px solid red;
+}
+
+ul {
+    border: 1px solid blue;
+}
+li {
+     display: inline;
+}
