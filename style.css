@@ -6,27 +6,121 @@
 
 /*---flex container----*/
 .container{
-    height: 100vh;
-    background: linear-gradient(0, 0, 0, .3);
-    border: 1px solid black;
+    background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+    url(./hero-bcg.jpeg) center/cover no-repeat;
+    min-height: 100vh;
+   
+    
 }
+/*---flex container---*/
 .navbar{
     display: flex;
-    flex:1 ;
-   
+    
+   }
+
+.item_left{
+    flex:3 ;
+}
+.item_right{
+    flex:5 ;
+}
+/*---flex container---*/
+.ulliItems  {
+    display: flex;
+    padding:5px ;
+    
 }
 /*---flex item---*/
-.left{
-    border: 1px solid red;
+.ulliItems li {
+    flex:1 ;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding:5px ;
+   display: inline;
 }
-.right{
-    display: flex;
-      border: 1px solid red;
+.ulliItems li  a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
 }
 
-ul {
-    border: 1px solid blue;
+@media only screen and (max-width: 600px) {
+    .navbar {
+      display: flex;
+      
+    }
+    .item_left{
+        display: none;
+    }
+    .item_right{
+        flex:1 ;
+    }
+    .ulliItems  {
+        padding:5px ;
+        
+    }
+
+
+  }
+  @media only screen and (max-width: 350px) {
+    .navbar {
+      display: flex;
+      
+    }
+    .item_left{
+        display: none;
+    }
+    .item_right{
+        flex:1 ;
+        
+    }
+    .ulliItems  {
+        flex-direction:column;
+        padding:2px;
+        
+    }
+
+.landingPage h1{
+        text-transform: uppercase;
+        font-family: 'Cairo', sans-serif;
+        
+    }
+  }
+  /*---start button-----*/
+  .start{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
 }
-li {
-     display: inline;
+.start h2{
+    color: #fff;
+    padding: 3px 15px 3px 15px;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    font-family: Arial, 'Bebas Neue', cursive;
+    letter-spacing: 3px;
 }
+
+  /*-------Landing page part--*/
+  .landingPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 35vh;
+    color: #fff;
+}
+.landingPage h1{
+    text-transform: uppercase;
+    font-family: 'Cairo', sans-serif;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+.landingPage p{
+    text-align: center;
+    width: 450px;
+    font-family: serif;
+    font-size: 14px;
+  }
