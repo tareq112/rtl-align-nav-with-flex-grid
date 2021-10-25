@@ -45,6 +45,44 @@
     text-decoration: none;
 }
 
+ /*---start button-----*/
+ .start{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+}
+.start h2{
+    color: #fff;
+    padding: 3px 15px 3px 15px;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    font-family: Arial, 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+}
+
+  /*-------Landing page part--*/
+  .landingPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 35vh;
+    color: #fff;
+}
+.landingPage h1{
+    text-transform: uppercase;
+    font-family: 'Cairo', sans-serif;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+.landingPage p{
+    text-align: center;
+    width: 450px;
+    font-family: 'Zen Old Mincho', serif;
+    
+  }
+
 @media only screen and (max-width: 600px) {
     .navbar {
       display: flex;
@@ -87,40 +125,4 @@
         
     }
   }
-  /*---start button-----*/
-  .start{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40vh;
-}
-.start h2{
-    color: #fff;
-    padding: 3px 15px 3px 15px;
-    border: 2px solid #fff;
-    text-transform: uppercase;
-    padding: 8px 20px;
-    font-family: Arial, 'Bebas Neue', cursive;
-    letter-spacing: 3px;
-}
-
-  /*-------Landing page part--*/
-  .landingPage{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 35vh;
-    color: #fff;
-}
-.landingPage h1{
-    text-transform: uppercase;
-    font-family: 'Cairo', sans-serif;
-    letter-spacing: 2px;
-    font-size: 50px;
-}
-.landingPage p{
-    text-align: center;
-    width: 450px;
-    font-family: serif;
-    font-size: 14px;
-  }
+ 
